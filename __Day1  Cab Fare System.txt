@@ -1,0 +1,32 @@
+﻿// Cab Fare System
+
+import java.util.*;
+class Cab {
+   int fare;
+   
+   void showfare() {
+       System.out.print("Fare Amount: " + fare);
+   }
+}
+public class RideCab {
+   public static void main(String args[]) {
+       Cab id = new Cab();
+       Scanner sc = new Scanner(System.in);
+       int d;
+       
+       System.out.print("Enter the travel distance(in km): ");
+       d = sc.nextInt();
+       
+       id.fare = 12 * d;
+       
+       id.showfare();
+   }
+}
+
+	
+
+Output
+	
+
+Enter the travel distance(in km): 15
+Fare Amount: 180
